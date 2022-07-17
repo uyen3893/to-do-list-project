@@ -8,11 +8,11 @@ import java.security.SecureRandom;
 import java.util.List;
 import java.util.Random;
 
-public class MainPageFuntion extends MainPageObjects {
+public class MainPageFunction extends MainPageObjects {
 
     private CommonFunction commonFunction;
 
-    public MainPageFuntion(CommonFunction common) {
+    public MainPageFunction(CommonFunction common) {
         this.commonFunction = common;
     }
 

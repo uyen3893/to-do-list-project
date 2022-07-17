@@ -1,24 +1,24 @@
 package testCases;
 
 import configuration.Config;
-import functions.LoginFuntion;
+import functions.LoginFunction;
 import functions.LoginGithubFunction;
-import functions.MainPageFuntion;
+import functions.MainPageFunction;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class MainFlowTest extends TestBase{
 
-    public LoginFuntion loginFuntion;
-    public MainPageFuntion mainPageFuntion;
+    public LoginFunction loginFuntion;
+    public MainPageFunction mainPageFuntion;
     public LoginGithubFunction loginGithubFunction;
 
     @Test
     public void testCase () {
         //Initialize three objects
         loginGithubFunction = new LoginGithubFunction(commonFuntion);
-        loginFuntion = new LoginFuntion(commonFuntion);
-        mainPageFuntion = new MainPageFuntion(commonFuntion);
+        loginFuntion = new LoginFunction(commonFuntion);
+        mainPageFuntion = new MainPageFunction(commonFuntion);
         //Login github account
         loginGithubFunction.login();
         //login to the to do list page

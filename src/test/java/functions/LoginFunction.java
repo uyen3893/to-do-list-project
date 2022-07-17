@@ -3,10 +3,10 @@ package functions;
 import configuration.Config;
 import objects.LoginPageObjects;
 
-public class LoginFuntion extends LoginPageObjects {
+public class LoginFunction extends LoginPageObjects {
     private CommonFunction commonFunction;
 
-    public LoginFuntion(CommonFunction common) {
+    public LoginFunction(CommonFunction common) {
         this.commonFunction = common;
     }
 
